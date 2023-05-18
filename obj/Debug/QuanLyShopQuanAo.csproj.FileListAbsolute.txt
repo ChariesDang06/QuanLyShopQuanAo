@@ -1,0 +1,13 @@
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\bin\Debug\QuanLyShopQuanAo.exe.config
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\bin\Debug\QuanLyShopQuanAo.exe
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\bin\Debug\QuanLyShopQuanAo.pdb
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.csproj.AssemblyReference.cache
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.csproj.SuggestedBindingRedirects.cache
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.Properties.Resources.resources
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.csproj.GenerateResource.cache
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.csproj.CoreCompileInputs.cache
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.exe
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.pdb
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.frmDangNhap.resources
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.frmQuanLyKhoHang.resources
+D:\LEARN\Đồ án Desktop\QuanLyShopQuanAo\obj\Debug\QuanLyShopQuanAo.frmQuanLyBanHang.resources
