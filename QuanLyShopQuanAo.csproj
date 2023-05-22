@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChiTietDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietDonHang.Designer.cs">
+      <DependentUpon>frmChiTietDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoanhThu.Designer.cs">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLyBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,16 +76,31 @@
     <Compile Include="frmQuanLyKhoHang.Designer.cs">
       <DependentUpon>frmQuanLyKhoHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemHoaDon.Designer.cs">
+      <DependentUpon>frmXemHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietDonHang.resx">
+      <DependentUpon>frmChiTietDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoanhThu.resx">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyBanHang.resx">
       <DependentUpon>frmQuanLyBanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyKhoHang.resx">
       <DependentUpon>frmQuanLyKhoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemHoaDon.resx">
+      <DependentUpon>frmXemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
