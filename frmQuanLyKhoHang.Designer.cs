@@ -37,6 +37,8 @@
             this.pbSanPham = new System.Windows.Forms.PictureBox();
             this.btnao = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSanPham)).BeginInit();
             this.SuspendLayout();
@@ -51,17 +53,17 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(435, 29);
+            this.textBox1.Location = new System.Drawing.Point(562, 35);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 31);
+            this.textBox1.Size = new System.Drawing.Size(351, 31);
             this.textBox1.TabIndex = 3;
             // 
             // button3
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(680, 28);
+            this.button3.Location = new System.Drawing.Point(910, 34);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(30, 32);
             this.button3.TabIndex = 4;
@@ -131,11 +133,35 @@
             this.button1.Text = "Quần";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "S",
+            "M",
+            "L",
+            "XL"});
+            this.comboBox1.Location = new System.Drawing.Point(435, 46);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 50;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(462, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Tìm theo size";
+            // 
             // frmQuanLyKhoHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 439);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnao);
             this.Controls.Add(this.pbSanPham);
@@ -163,5 +189,7 @@
         private System.Windows.Forms.PictureBox pbSanPham;
         private System.Windows.Forms.Button btnao;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
