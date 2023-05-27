@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs">
+      <DependentUpon>QLShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <DependentUpon>QLShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillDetail.cs">
+      <DependentUpon>QLShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>QLShopModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +91,11 @@
     <Compile Include="frmQuanLyBanHang.Designer.cs">
       <DependentUpon>frmQuanLyBanHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLyKhoHang.cs">
+    <Compile Include="frmQuanLyNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuanLyKhoHang.Designer.cs">
-      <DependentUpon>frmQuanLyKhoHang.cs</DependentUpon>
+    <Compile Include="frmQuanLyNhapHang.Designer.cs">
+      <DependentUpon>frmQuanLyNhapHang.cs</DependentUpon>
     </Compile>
     <Compile Include="frmXemHoaDon.cs">
       <SubType>Form</SubType>
@@ -82,8 +103,37 @@
     <Compile Include="frmXemHoaDon.Designer.cs">
       <DependentUpon>frmXemHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Partner.cs">
+      <DependentUpon>QLShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>QLShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductProperty.cs">
+      <DependentUpon>QLShopModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLShopModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLShopModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLShopModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLShopModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLShopModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="QLShopQuanAoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLShopQuanAoDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,8 +146,8 @@
     <EmbeddedResource Include="frmQuanLyBanHang.resx">
       <DependentUpon>frmQuanLyBanHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyKhoHang.resx">
-      <DependentUpon>frmQuanLyKhoHang.cs</DependentUpon>
+    <EmbeddedResource Include="frmQuanLyNhapHang.resx">
+      <DependentUpon>frmQuanLyNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXemHoaDon.resx">
       <DependentUpon>frmXemHoaDon.cs</DependentUpon>
@@ -111,6 +161,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,9 +171,42 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="QLShopModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLShopModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLShopModel.edmx.diagram">
+      <DependentUpon>QLShopModel.edmx</DependentUpon>
+    </None>
+    <None Include="QLShopQuanAoDataSet.xsc">
+      <DependentUpon>QLShopQuanAoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLShopQuanAoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLShopQuanAoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLShopQuanAoDataSet.xss">
+      <DependentUpon>QLShopQuanAoDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLShopModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLShopModel.edmx</DependentUpon>
+      <LastGenOutput>QLShopModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLShopModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLShopModel.edmx</DependentUpon>
+      <LastGenOutput>QLShopModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
